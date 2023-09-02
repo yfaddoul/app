@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let u of users">
+    {{u.name}}
+  </li>
+</ul>
+<input type="text" [(ngModel)]="newUser.name" placeholder="Enter your name"><br>
+<input type="text" [(ngModel)]="newUser.username" placeholder="Enter your username"><br>
+<input type="text" [(ngModel)]="newUser.email" placeholder="Enter your email"><br>
+<button (click)="SaveUser()">Save User</button>
